@@ -1,6 +1,8 @@
 # T4R - *The Traveller's Tales Texture Ripper*
 Rudimentary texture ripper for TT Lego Games
 
+Requires Microsoft .NET Framework 4.7.2!
+
 ---
 
 <table><tbody><tr><td>
