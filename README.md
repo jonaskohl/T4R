@@ -9,6 +9,14 @@ Rudimentary texture ripper for TT Lego Games
 
 ---
 
+## Tested with the following games:
+
+- Currently only tested against *LEGO® City Undercover*
+
+I will test the program with more games in the near future.
+
+---
+
 ## Planned features
 
 - [ ] Extract file names from files as well (currently names the files after their offsets).
