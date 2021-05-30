@@ -49,6 +49,8 @@ namespace TTTextureRipper
             currentFs = File.OpenRead(fileName);
             currentFileName = fileName;
             toolStripStatusLabel1.Text = "Opened file " + fileName;
+            extractDDSFilesToToolStripMenuItem.Enabled = true;
+            closeFileToolStripMenuItem.Enabled = true;
         }
 
         private void OpenFile(string fileName)
@@ -98,6 +100,17 @@ namespace TTTextureRipper
         {
             using (var d = new AboutBox1())
                 d.ShowDialog(this);
+        }
+
+        private void closeFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            closeFileToolStripMenuItem.Enabled = false;
+            extractDDSFilesToToolStripMenuItem.Enabled = false;
+            toolStripStatusLabel1.Text = "";
+
+            currentFs.Dispose();
+            currentFs = null;
+            currentFileName = null;
         }
     }
 }
